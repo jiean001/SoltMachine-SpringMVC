@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_1_0.xsd"
+             version="1.0">
+
+    <persistence-unit name="aoguGenes" transaction-type="RESOURCE_LOCAL">
+        <!-- 选择jpa持久化实现厂商，这里以Hibernate为例-->
+        <provider>org.hibernate.ejb.HibernatePersistence</provider>
+        <class>Aogu.Genes.Domain.TActivityinfoEntity</class>
+        <class>Aogu.Genes.Domain.TActivitymachineEntity</class>
+        <class>Aogu.Genes.Domain.TAdinfoEntity</class>
+        <class>Aogu.Genes.Domain.TAdmachineEntity</class>
+        <class>Aogu.Genes.Domain.TBusinessinfoEntity</class>
+        <class>Aogu.Genes.Domain.TBusinessmaninfoEntity</class>
+        <class>Aogu.Genes.Domain.TFaultinfoEntity</class>
+        <class>Aogu.Genes.Domain.TGoodsinfoEntity</class>
+        <class>Aogu.Genes.Domain.TGoodskindinfoEntity</class>
+        <class>Aogu.Genes.Domain.TGoodswaygoodsEntity</class>
+        <class>Aogu.Genes.Domain.TGoodswayinfoEntity</class>
+        <class>Aogu.Genes.Domain.TGuestinfoEntity</class>
+        <class>Aogu.Genes.Domain.TLogrecordEntity</class>
+        <class>Aogu.Genes.Domain.TMachineEntity</class>
+        <class>Aogu.Genes.Domain.TMachinegoodsEntity</class>
+        <class>Aogu.Genes.Domain.TMachinetypeEntity</class>
+        <class>Aogu.Genes.Domain.TMenuEntity</class>
+        <class>Aogu.Genes.Domain.TRolepermissionEntity</class>
+        <class>Aogu.Genes.Domain.TRolesEntity</class>
+        <class>Aogu.Genes.Domain.TSalesrecordEntity</class>
+        <class>Aogu.Genes.Domain.TUserinfoEntity</class>
+        <class>Aogu.Genes.Domain.TUserrolesEntity</class>
+        <properties>
+            <property name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect"/>
+            <property name="hibernate.hbm2ddl.auto" value="update"/>
+            <property name="hibernate.max_fetch_depth" value="3"/>
+            <property name="hibernate.jdbc.fetch_size" value="18"/>
+            <property name="hibernate.jdbc.batch_size" value="10"/>
+            <property name="hibernate.show_sql" value="true"/>
+            <property name="hibernate.format_sql" value="true"/>
+            <!-- 下面两个暂时不能用，原因不解-->
+            <!--<property name="cache.use_second_level_cache" value="true"/>&lt;!&ndash; 启用二级缓存 &ndash;&gt;-->
+            <!--<property name="hibernate.cache.use_query_cache" value="true"/>&lt;!&ndash; 启用查询缓存 &ndash;&gt;-->
+            <!-- 关闭Load方法的延迟加载 -->
+            <property name="hibernate.enable_lazy_load_no_trans" value="true"/>
+            <property name="hibernate.connection.url" value="jdbc:mysql://localhost:3306/machinesys"/>
+            <property name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver"/>
+            <property name="hibernate.connection.username" value="${jdbc_username}"/>
+            <property name="hibernate.connection.password" value="${jdbc_password}"/>
+        </properties>
+    </persistence-unit>
+
+</persistence>

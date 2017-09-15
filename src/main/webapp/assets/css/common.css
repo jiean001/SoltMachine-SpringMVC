@@ -1,0 +1,78 @@
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,a,abbr,address,big,em,img,q,small,strike,strong,pre,
+sub,sup,tt,var,i,dl,dt,dd,ol,ul,li,form,fieldset,label,table,caption,tbody,thead,tfoot,tr,th,td,article,
+aside,canvas,details,figure,figcaption,header,footer,menu,nav,output,section,time,mark,audio,
+video,input,select,button{margin:0;padding:0;border:0;font-family:'微软雅黑',Arial;font-weight:inherit;
+    outline:0;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
+/*去除默认样式*/
+ul,ol,li{list-style:none;}
+/*表格边框合并，边框距零*/
+table{border-collapse:collapse;border-spacing:0;}
+/*继承父元素的字体系列样式*/
+input,select,textarea,button{font-family:inherit;}
+/*i标签去除斜体*/
+i{ font-style:normal !important;}
+/*清除浮动*/
+.fl{float:left !important;}
+.fr{float:right !important;}
+.clearfix:before,.clearfix:after{content:"";display:table;}
+.clearfix:after{clear:both; content: ""; display: block; height: 0; visibility: hidden;}
+.clearfix{zoom:1;}
+.clear{clear: both;}
+/*a链接*/
+a{text-decoration:none;color:#000;}
+a:hover{text-decoration:none;}
+/*去除点击高亮效果*/
+a,button,input,select,img,label{-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-tap-highlight-color:transparent;outline:medium none; border: none}
+input::-moz-focus-inner{border:none;padding:0;}
+select, input{vertical-align:middle;}
+/*去掉苹果的默认UI来渲染按钮*/
+input[type="submit"],input[type="reset"],input[type="button"],button{-webkit-appearance:none;}
+/*placeholder文本颜色*/
+input::-webkit-input-placeholder,textarea::-webkit-input-placeholder{
+    color:#ccc;
+}
+input:-moz-placeholder,textarea:-moz-placeholder{
+    color:#ccc;
+
+}
+/*html5标签*/
+header,footer,section,article,aside,nav,figure{display:block;}
+/*长英文字母 数字 换行*/
+p{word-break:break-all;word-wrap:break-word;}
+/*去除默认样式*/
+h1,h2,h3,h4,h5,h6,strong,i,em,address, caption, cite, code, dfn, th, var{font-weight:normal;font-style:normal;}
+fieldset, img{border:none;}
+/*去除长按a链接弹框*/
+html,body{-webkit-touch-callout:none;}
+select {
+    /*Chrome和Firefox里面的边框是不一样的，所以复写了一下*/
+    /*border: solid 1px red;*/
+
+    /*很关键：将默认的select选择框样式清除*/
+    appearance:none;
+    -moz-appearance:none;
+    -webkit-appearance:none;
+
+    /*在选择框的最右侧中间显示小箭头图片*/
+    background: url(../images/sanjiaoxing.png) no-repeat scroll right center transparent;
+    /*为下拉小箭头留出一点位置，避免被文字覆盖*/
+    padding-right:25px;
+}
+
+.alert{
+    border-radius: 0;
+    width: 300px;
+    height: 30px;
+    padding: 6px 10px 0 40px;
+    display: none;
+    background-color: #f67e7e;
+    color: #fff;
+    font-family: "Microsoft YaHei", serif;
+    font-size: 12px;
+}
+.alert i{
+    font-size: 18px;
+    line-height: 30px;
+    margin: 0 10px;
+    color: #5C8CE6;
+}
