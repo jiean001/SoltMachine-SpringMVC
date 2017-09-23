@@ -1,0 +1,113 @@
+2017-09-24 04:39:11 [ INFO] - org.springframework.test.context.support.DefaultTestContextBootstrapper -AbstractTestContextBootstrapper.java(259) -Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+  2017-09-24 04:39:11 [ INFO] - org.springframework.test.context.support.DefaultTestContextBootstrapper -AbstractTestContextBootstrapper.java(207) -Could not instantiate TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [javax/servlet/ServletContext]
+  2017-09-24 04:39:11 [ INFO] - org.springframework.test.context.support.DefaultTestContextBootstrapper -AbstractTestContextBootstrapper.java(185) -Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@5702b3b1, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@69ea3742, org.springframework.test.context.support.DirtiesContextTestExecutionListener@4b952a2d, org.springframework.test.context.transaction.TransactionalTestExecutionListener@3159c4b8, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@73846619]
+  2017-09-24 04:39:11 [ INFO] - org.springframework.beans.factory.xml.XmlBeanDefinitionReader -XmlBeanDefinitionReader.java(317) -Loading XML bean definitions from class path resource [applicationContext.xml]
+  2017-09-24 04:39:12 [ INFO] - org.springframework.context.support.GenericApplicationContext -AbstractApplicationContext.java(577) -Refreshing org.springframework.context.support.GenericApplicationContext@47ef968d: startup date [Sun Sep 24 04:39:12 CST 2017]; root of context hierarchy
+  2017-09-24 04:39:12 [ INFO] - org.springframework.beans.factory.config.PropertyPlaceholderConfigurer -PropertiesLoaderSupport.java(172) -Loading properties file from class path resource [config.properties]
+  2017-09-24 04:39:12 [ INFO] - org.springframework.orm.jpa.persistenceunit.PersistenceUnitReader -PersistenceUnitReader.java(207) -persistence.xml should be located inside META-INF directory; cannot determine persistence unit root URL for class path resource [persistence.xml]
+  2017-09-24 04:39:12 [ INFO] - org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean -LocalContainerEntityManagerFactoryBean.java(334) -Building JPA container EntityManagerFactory for persistence unit 'aoguGenes'
+  2017-09-24 04:39:12 [ WARN] - org.hibernate.ejb.HibernatePersistence -HibernatePersistence.java(58) -HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+  2017-09-24 04:39:12 [ INFO] - org.hibernate.Version -Version.java(54) -HHH000412: Hibernate Core {4.3.8.Final}
+  2017-09-24 04:39:12 [ INFO] - org.hibernate.cfg.Environment -Environment.java(239) -HHH000206: hibernate.properties not found
+  2017-09-24 04:39:12 [ INFO] - org.hibernate.cfg.Environment -Environment.java(346) -HHH000021: Bytecode provider name : javassist
+  2017-09-24 04:39:13 [ INFO] - org.hibernate.annotations.common.Version -JavaReflectionManager.java(66) -HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+  2017-09-24 04:39:13 [ INFO] - com.alibaba.druid.pool.DruidDataSource -DruidDataSource.java(638) -{dataSource-1} inited
+  2017-09-24 04:39:13 [ INFO] - org.hibernate.dialect.Dialect -Dialect.java(145) -HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+  2017-09-24 04:39:13 [ INFO] - org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory -ASTQueryTranslatorFactory.java(47) -HHH000397: Using ASTQueryTranslatorFactory
+  2017-09-24 04:39:14 [ INFO] - org.hibernate.tool.hbm2ddl.SchemaUpdate -SchemaUpdate.java(207) -HHH000228: Running hbm2ddl schema update
+  2017-09-24 04:39:14 [ INFO] - org.hibernate.tool.hbm2ddl.SchemaUpdate -SchemaUpdate.java(218) -HHH000102: Fetching database metadata
+  2017-09-24 04:39:14 [ INFO] - org.hibernate.tool.hbm2ddl.SchemaUpdate -SchemaUpdate.java(230) -HHH000396: Updating schema
+  2017-09-24 04:39:14 [ INFO] - org.hibernate.tool.hbm2ddl.TableMetadata -TableMetadata.java(66) -HHH000261: Table found: machinesys.t_activityinfo
+  2017-09-24 04:39:14 [ INFO] - org.hibernate.tool.hbm2ddl.TableMetadata -TableMetadata.java(67) -HHH000037: Columns: [valid, activityid, activitydiscount, operatetime, activitystarttime, activityendtime, freefield, activityname, operator]
+  2017-09-24 04:39:14 [ INFO] - org.hibernate.tool.hbm2ddl.TableMetadata -TableMetadata.java(69) -HHH000108: Foreign keys: []
+  2017-09-24 04:39:14 [ INFO] - org.hibernate.tool.hbm2ddl.TableMetadata -TableMetadata.java(70) -HHH000126: Indexes: [primary]
+  2017-09-24 04:39:14 [ INFO] - org.hibernate.tool.hbm2ddl.TableMetadata -TableMetadata.java(66) -HHH000261: Table found: machinesys.t_activitymachine
+  2017-09-24 04:39:14 [ INFO] - org.hibernate.tool.hbm2ddl.TableMetadata -TableMetadata.java(67) -HHH000037: Columns: [activityid, machineid, operatetime, activitymachineid, freefield, operator]
+  2017-09-24 04:39:14 [ INFO] - org.hibernate.tool.hbm2ddl.TableMetadata -TableMetadata.java(69) -HHH000108: Foreign keys: [fk_reference_12, fk_reference_18]
+  2017-09-24 04:39:14 [ INFO] - org.hibernate.tool.hbm2ddl.TableMetadata -TableMetadata.java(70) -HHH000126: Indexes: [fk_reference_12, primary, fk_reference_18]
+  2017-09-24 04:39:14 [ INFO] - org.hibernate.tool.hbm2ddl.TableMetadata -TableMetadata.java(66) -HHH000261: Table found: machinesys.t_adinfo
+  2017-09-24 04:39:14 [ INFO] - org.hibernate.tool.hbm2ddl.TableMetadata -TableMetadata.java(67) -HHH000037: Columns: [adstarttime, adendtime, valid, adid, adpath, adname, operatetime, freefield, operator]
+  2017-09-24 04:39:14 [ INFO] - org.hibernate.tool.hbm2ddl.TableMetadata -TableMetadata.java(69) -HHH000108: Foreign keys: []
+  2017-09-24 04:39:14 [ INFO] - org.hibernate.tool.hbm2ddl.TableMetadata -TableMetadata.java(70) -HHH000126: Indexes: [primary]
+  2017-09-24 04:39:14 [ INFO] - org.hibernate.tool.hbm2ddl.TableMetadata -TableMetadata.java(66) -HHH000261: Table found: machinesys.t_admachine
+  2017-09-24 04:39:14 [ INFO] - org.hibernate.tool.hbm2ddl.TableMetadata -TableMetadata.java(67) -HHH000037: Columns: [machineid, adid, operatetime, admachineid, freefield, operator]
+  2017-09-24 04:39:14 [ INFO] - org.hibernate.tool.hbm2ddl.TableMetadata -TableMetadata.java(69) -HHH000108: Foreign keys: [fk_reference_11, fk_reference_17]
+  2017-09-24 04:39:14 [ INFO] - org.hibernate.tool.hbm2ddl.TableMetadata -TableMetadata.java(70) -HHH000126: Indexes: [fk_reference_11, fk_reference_17, primary]
+  2017-09-24 04:39:14 [ INFO] - org.hibernate.tool.hbm2ddl.TableMetadata -TableMetadata.java(66) -HHH000261: Table found: machinesys.t_businessinfo
+  2017-09-24 04:39:14 [ INFO] - org.hibernate.tool.hbm2ddl.TableMetadata -TableMetadata.java(67) -HHH000037: Columns: [area, creditcode, address, alipay, businessid, fatherbusinessid, userid, operator, valid, phone, operatetime, wechatpay, businessname, freefiled, contacts]
+  2017-09-24 04:39:14 [ INFO] - org.hibernate.tool.hbm2ddl.TableMetadata -TableMetadata.java(69) -HHH000108: Foreign keys: [fk_reference_33]
+  2017-09-24 04:39:14 [ INFO] - org.hibernate.tool.hbm2ddl.TableMetadata -TableMetadata.java(70) -HHH000126: Indexes: [userid_idx, primary]
+  2017-09-24 04:39:14 [ INFO] - org.hibernate.tool.hbm2ddl.TableMetadata -TableMetadata.java(66) -HHH000261: Table found: machinesys.t_businessmaninfo
+  2017-09-24 04:39:14 [ INFO] - org.hibernate.tool.hbm2ddl.TableMetadata -TableMetadata.java(67) -HHH000037: Columns: [jobstate, jobtime, phone, operatetime, idcard, leavetime, businessid, freefield, userid, operator, businessmanid, realname]
+  2017-09-24 04:39:14 [ INFO] - org.hibernate.tool.hbm2ddl.TableMetadata -TableMetadata.java(69) -HHH000108: Foreign keys: [fk_reference_1, fk_reference_25]
+  2017-09-24 04:39:14 [ INFO] - org.hibernate.tool.hbm2ddl.TableMetadata -TableMetadata.java(70) -HHH000126: Indexes: [fk_reference_1, fk_reference_25, primary]
+  2017-09-24 04:39:14 [ INFO] - org.hibernate.tool.hbm2ddl.TableMetadata -TableMetadata.java(66) -HHH000261: Table found: machinesys.t_faultinfo
+  2017-09-24 04:39:14 [ INFO] - org.hibernate.tool.hbm2ddl.TableMetadata -TableMetadata.java(67) -HHH000037: Columns: [repairman, machineid, faultcode, operatetime, faultid, freefield, faulttime, solvetime, operator]
+  2017-09-24 04:39:14 [ INFO] - org.hibernate.tool.hbm2ddl.TableMetadata -TableMetadata.java(69) -HHH000108: Foreign keys: [fk_reference_7]
+  2017-09-24 04:39:14 [ INFO] - org.hibernate.tool.hbm2ddl.TableMetadata -TableMetadata.java(70) -HHH000126: Indexes: [fk_reference_7, primary]
+  2017-09-24 04:39:14 [ INFO] - org.hibernate.tool.hbm2ddl.TableMetadata -TableMetadata.java(66) -HHH000261: Table found: machinesys.t_goodsinfo
+  2017-09-24 04:39:14 [ INFO] - org.hibernate.tool.hbm2ddl.TableMetadata -TableMetadata.java(67) -HHH000037: Columns: [valid, goodspicpath, operatetime, goodsid, goodsscore, freefield, goodsname, goodsintroduction, goodskindid, operator]
+  2017-09-24 04:39:14 [ INFO] - org.hibernate.tool.hbm2ddl.TableMetadata -TableMetadata.java(69) -HHH000108: Foreign keys: [fk_reference_4]
+  2017-09-24 04:39:14 [ INFO] - org.hibernate.tool.hbm2ddl.TableMetadata -TableMetadata.java(70) -HHH000126: Indexes: [fk_reference_4, primary]
+  2017-09-24 04:39:14 [ INFO] - org.hibernate.tool.hbm2ddl.TableMetadata -TableMetadata.java(66) -HHH000261: Table found: machinesys.t_goodskindinfo
+  2017-09-24 04:39:14 [ INFO] - org.hibernate.tool.hbm2ddl.TableMetadata -TableMetadata.java(67) -HHH000037: Columns: [goodskind, valid, operatetime, freefield, fathergoodskindid, goodskindid, operator]
+  2017-09-24 04:39:14 [ INFO] - org.hibernate.tool.hbm2ddl.TableMetadata -TableMetadata.java(69) -HHH000108: Foreign keys: [fk_reference_9]
+  2017-09-24 04:39:14 [ INFO] - org.hibernate.tool.hbm2ddl.TableMetadata -TableMetadata.java(70) -HHH000126: Indexes: [fk_reference_9, primary]
+  2017-09-24 04:39:14 [ INFO] - org.hibernate.tool.hbm2ddl.TableMetadata -TableMetadata.java(66) -HHH000261: Table found: machinesys.t_goodswaygoods
+  2017-09-24 04:39:14 [ INFO] - org.hibernate.tool.hbm2ddl.TableMetadata -TableMetadata.java(67) -HHH000037: Columns: [valid, goodswaygoodsid, machineid, operatetime, goodsid, goodswaynum, freefield, goodsnum, operator]
+  2017-09-24 04:39:14 [ INFO] - org.hibernate.tool.hbm2ddl.TableMetadata -TableMetadata.java(69) -HHH000108: Foreign keys: [fk_reference_34, fk_nv58cxv1x6x9gtuna94wpaf5, fk_reference_35]
+  2017-09-24 04:39:14 [ INFO] - org.hibernate.tool.hbm2ddl.TableMetadata -TableMetadata.java(70) -HHH000126: Indexes: [fk_reference_35_idx, fk_reference_34_idx, fk_nv58cxv1x6x9gtuna94wpaf5, primary]
+  2017-09-24 04:39:14 [ INFO] - org.hibernate.tool.hbm2ddl.TableMetadata -TableMetadata.java(66) -HHH000261: Table found: machinesys.t_goodswayinfo
+  2017-09-24 04:39:14 [ INFO] - org.hibernate.tool.hbm2ddl.TableMetadata -TableMetadata.java(67) -HHH000037: Columns: [goodswaysize, machinetypeid, goodswayid, goodswaynum, freefield]
+  2017-09-24 04:39:14 [ INFO] - org.hibernate.tool.hbm2ddl.TableMetadata -TableMetadata.java(69) -HHH000108: Foreign keys: [fk_reference_2]
+  2017-09-24 04:39:14 [ INFO] - org.hibernate.tool.hbm2ddl.TableMetadata -TableMetadata.java(70) -HHH000126: Indexes: [fk_reference_2, primary]
+  2017-09-24 04:39:14 [ INFO] - org.hibernate.tool.hbm2ddl.TableMetadata -TableMetadata.java(66) -HHH000261: Table found: machinesys.t_guestinfo
+  2017-09-24 04:39:14 [ INFO] - org.hibernate.tool.hbm2ddl.TableMetadata -TableMetadata.java(67) -HHH000037: Columns: [score, guestnumtype, guestnum, freefield, guestid]
+  2017-09-24 04:39:14 [ INFO] - org.hibernate.tool.hbm2ddl.TableMetadata -TableMetadata.java(69) -HHH000108: Foreign keys: []
+  2017-09-24 04:39:14 [ INFO] - org.hibernate.tool.hbm2ddl.TableMetadata -TableMetadata.java(70) -HHH000126: Indexes: [primary]
+  2017-09-24 04:39:14 [ INFO] - org.hibernate.tool.hbm2ddl.TableMetadata -TableMetadata.java(66) -HHH000261: Table found: machinesys.t_logrecord
+  2017-09-24 04:39:14 [ INFO] - org.hibernate.tool.hbm2ddl.TableMetadata -TableMetadata.java(67) -HHH000037: Columns: [logintime, loginip, logrecordid, userid]
+  2017-09-24 04:39:14 [ INFO] - org.hibernate.tool.hbm2ddl.TableMetadata -TableMetadata.java(69) -HHH000108: Foreign keys: [fk_reference_26]
+  2017-09-24 04:39:14 [ INFO] - org.hibernate.tool.hbm2ddl.TableMetadata -TableMetadata.java(70) -HHH000126: Indexes: [fk_reference_26, primary]
+  2017-09-24 04:39:14 [ INFO] - org.hibernate.tool.hbm2ddl.TableMetadata -TableMetadata.java(66) -HHH000261: Table found: machinesys.t_machine
+  2017-09-24 04:39:14 [ INFO] - org.hibernate.tool.hbm2ddl.TableMetadata -TableMetadata.java(67) -HHH000037: Columns: [machinetypeid, machinenum, portnum, machinestate, businessid, freefield, operator, manufacturer, machineid, operatetime, macaddress, machineplace, mask, machineip, producetime]
+  2017-09-24 04:39:14 [ INFO] - org.hibernate.tool.hbm2ddl.TableMetadata -TableMetadata.java(69) -HHH000108: Foreign keys: [fk_reference_3, fk_reference_8]
+  2017-09-24 04:39:14 [ INFO] - org.hibernate.tool.hbm2ddl.TableMetadata -TableMetadata.java(70) -HHH000126: Indexes: [fk_reference_3, fk_reference_8, primary]
+  2017-09-24 04:39:14 [ INFO] - org.hibernate.tool.hbm2ddl.TableMetadata -TableMetadata.java(66) -HHH000261: Table found: machinesys.t_machinegoods
+  2017-09-24 04:39:14 [ INFO] - org.hibernate.tool.hbm2ddl.TableMetadata -TableMetadata.java(67) -HHH000037: Columns: [machineid, goodsid, price, freefield]
+  2017-09-24 04:39:14 [ INFO] - org.hibernate.tool.hbm2ddl.TableMetadata -TableMetadata.java(69) -HHH000108: Foreign keys: [fk_reference_5, fk_reference_6]
+  2017-09-24 04:39:14 [ INFO] - org.hibernate.tool.hbm2ddl.TableMetadata -TableMetadata.java(70) -HHH000126: Indexes: [fk_reference_5, primary]
+  2017-09-24 04:39:14 [ INFO] - org.hibernate.tool.hbm2ddl.TableMetadata -TableMetadata.java(66) -HHH000261: Table found: machinesys.t_machinetype
+  2017-09-24 04:39:14 [ INFO] - org.hibernate.tool.hbm2ddl.TableMetadata -TableMetadata.java(67) -HHH000037: Columns: [temperaturecontrol, machinetypeid, freefield, adshow, machinetype]
+  2017-09-24 04:39:14 [ INFO] - org.hibernate.tool.hbm2ddl.TableMetadata -TableMetadata.java(69) -HHH000108: Foreign keys: []
+  2017-09-24 04:39:14 [ INFO] - org.hibernate.tool.hbm2ddl.TableMetadata -TableMetadata.java(70) -HHH000126: Indexes: [primary]
+  2017-09-24 04:39:14 [ INFO] - org.hibernate.tool.hbm2ddl.TableMetadata -TableMetadata.java(66) -HHH000261: Table found: machinesys.t_menu
+  2017-09-24 04:39:14 [ INFO] - org.hibernate.tool.hbm2ddl.TableMetadata -TableMetadata.java(67) -HHH000037: Columns: [desp, menuid, freefield, title, url, parentmenuid]
+  2017-09-24 04:39:14 [ INFO] - org.hibernate.tool.hbm2ddl.TableMetadata -TableMetadata.java(69) -HHH000108: Foreign keys: [fk_reference_24]
+  2017-09-24 04:39:14 [ INFO] - org.hibernate.tool.hbm2ddl.TableMetadata -TableMetadata.java(70) -HHH000126: Indexes: [fk_reference_24, primary]
+  2017-09-24 04:39:14 [ INFO] - org.hibernate.tool.hbm2ddl.TableMetadata -TableMetadata.java(66) -HHH000261: Table found: machinesys.t_rolepermission
+  2017-09-24 04:39:14 [ INFO] - org.hibernate.tool.hbm2ddl.TableMetadata -TableMetadata.java(67) -HHH000037: Columns: [rolepermissionid, roleid, menuid, freefield, parentmenuid]
+  2017-09-24 04:39:14 [ INFO] - org.hibernate.tool.hbm2ddl.TableMetadata -TableMetadata.java(69) -HHH000108: Foreign keys: [fk_reference_22, fk_reference_23]
+  2017-09-24 04:39:14 [ INFO] - org.hibernate.tool.hbm2ddl.TableMetadata -TableMetadata.java(70) -HHH000126: Indexes: [fk_reference_22, fk_reference_23, primary]
+  2017-09-24 04:39:14 [ INFO] - org.hibernate.tool.hbm2ddl.TableMetadata -TableMetadata.java(66) -HHH000261: Table found: machinesys.t_roles
+  2017-09-24 04:39:14 [ INFO] - org.hibernate.tool.hbm2ddl.TableMetadata -TableMetadata.java(67) -HHH000037: Columns: [roleid, rolename, roledesp, freefield]
+  2017-09-24 04:39:14 [ INFO] - org.hibernate.tool.hbm2ddl.TableMetadata -TableMetadata.java(69) -HHH000108: Foreign keys: []
+  2017-09-24 04:39:14 [ INFO] - org.hibernate.tool.hbm2ddl.TableMetadata -TableMetadata.java(70) -HHH000126: Indexes: [primary]
+  2017-09-24 04:39:14 [ INFO] - org.hibernate.tool.hbm2ddl.TableMetadata -TableMetadata.java(66) -HHH000261: Table found: machinesys.t_salesrecord
+  2017-09-24 04:39:14 [ INFO] - org.hibernate.tool.hbm2ddl.TableMetadata -TableMetadata.java(67) -HHH000037: Columns: [saletime, salesrecordid, machineid, goodsid, saleprice, freefield, guestid]
+  2017-09-24 04:39:14 [ INFO] - org.hibernate.tool.hbm2ddl.TableMetadata -TableMetadata.java(69) -HHH000108: Foreign keys: [fk_reference_15, fk_reference_16, fk_reference_19]
+  2017-09-24 04:39:14 [ INFO] - org.hibernate.tool.hbm2ddl.TableMetadata -TableMetadata.java(70) -HHH000126: Indexes: [fk_reference_15, fk_reference_16, fk_reference_19, primary]
+  2017-09-24 04:39:14 [ INFO] - org.hibernate.tool.hbm2ddl.TableMetadata -TableMetadata.java(66) -HHH000261: Table found: machinesys.t_userinfo
+  2017-09-24 04:39:14 [ INFO] - org.hibernate.tool.hbm2ddl.TableMetadata -TableMetadata.java(67) -HHH000037: Columns: [valid, password, freefield, userid, username]
+  2017-09-24 04:39:14 [ INFO] - org.hibernate.tool.hbm2ddl.TableMetadata -TableMetadata.java(69) -HHH000108: Foreign keys: []
+  2017-09-24 04:39:14 [ INFO] - org.hibernate.tool.hbm2ddl.TableMetadata -TableMetadata.java(70) -HHH000126: Indexes: [primary]
+  2017-09-24 04:39:14 [ INFO] - org.hibernate.tool.hbm2ddl.TableMetadata -TableMetadata.java(66) -HHH000261: Table found: machinesys.t_userroles
+  2017-09-24 04:39:14 [ INFO] - org.hibernate.tool.hbm2ddl.TableMetadata -TableMetadata.java(67) -HHH000037: Columns: [userrolesid, roleid, freefield, userid]
+  2017-09-24 04:39:14 [ INFO] - org.hibernate.tool.hbm2ddl.TableMetadata -TableMetadata.java(69) -HHH000108: Foreign keys: [fk_reference_20, fk_reference_21]
+  2017-09-24 04:39:14 [ INFO] - org.hibernate.tool.hbm2ddl.TableMetadata -TableMetadata.java(70) -HHH000126: Indexes: [fk_reference_20, fk_reference_21, primary]
+  2017-09-24 04:39:14 [ INFO] - org.hibernate.tool.hbm2ddl.TableMetadata -TableMetadata.java(66) -HHH000261: Table found: machinesys.t_userroles
+  2017-09-24 04:39:14 [ INFO] - org.hibernate.tool.hbm2ddl.TableMetadata -TableMetadata.java(67) -HHH000037: Columns: [userrolesid, roleid, freefield, userid]
+  2017-09-24 04:39:14 [ INFO] - org.hibernate.tool.hbm2ddl.TableMetadata -TableMetadata.java(69) -HHH000108: Foreign keys: [fk_reference_20, fk_reference_21]
+  2017-09-24 04:39:14 [ INFO] - org.hibernate.tool.hbm2ddl.TableMetadata -TableMetadata.java(70) -HHH000126: Indexes: [fk_reference_20, fk_reference_21, primary]
+  2017-09-24 04:39:14 [ INFO] - org.hibernate.tool.hbm2ddl.SchemaUpdate -SchemaUpdate.java(267) -HHH000232: Schema update complete
+  
